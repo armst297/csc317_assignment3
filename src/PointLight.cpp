@@ -5,5 +5,11 @@ void PointLight::direction(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Add your code here:
+  // return the direction vector towards the light source based on the given q
+  d = q - this->p;
+  // distance is the max_t
+  max_t = d.norm();
+  d.normalize(); // normalized direction
+  return;
   ////////////////////////////////////////////////////////////////////////////
 }
